@@ -2,20 +2,23 @@ import { CarProps, FilterProps } from "../types";
 
 export async function fetchCars(filters: FilterProps) {
   const { manufacturer, year, model, limit, fuel } = filters;
-  const headers = {
+
+  // Set the required headers for the API request
+  const headers: HeadersInit = {
     "X-RapidAPI-Key": "fe80d4aae1msh6099a77e0814688p111614jsn43384efaa0b3",
     "X-RapidAPI-Host": "cars-by-api-ninjas.p.rapidapi.com",
   };
 
+  // Set the required headers for the API request
   const response = await fetch(
-    `https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?make=${manufacturer} & year=${year}& model=${model}&limit=${limit}& fuel_type=${fuel}`,
+    `https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?make=${manufacturer}&year=${year}&model=${model}&limit=${limit}&fuel_type=${fuel}`,
     {
       headers: headers,
     }
   );
 
+  // Parse the response as JSON
   const result = await response.json();
-
   return result;
 }
 
@@ -51,5 +54,17 @@ export const updateSearchParams = (type: string, value: string) => {
   const searchParams = new URLSearchParams(window.location.search);
   searchParams.set(type, value);
   const newPathname = `${window.location.pathname}?${searchParams.toString()}`;
+  return newPathname;
+};
+
+export const deleteSearchParams = (type: string) => {
+  const newSearchParams = new URLSearchParams(window.location.search);
+
+  newSearchParams.delete(type.toLocaleLowerCase());
+
+  const newPathname = `${
+    window.location.pathname
+  }?${newSearchParams.toString()}`;
+
   return newPathname;
 };
