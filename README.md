@@ -4,7 +4,13 @@ Welcome to **Car Haven**, an interactive web application for car enthusiasts! Bu
 
 This project leverages **RapidAPI Cars API** to fetch real-time car data and images, ensuring that users get up-to-date information about cars from around the world.
 
-![Car Haven Banner](./public/images/logo.png)
+![Car Haven Banner](./public/images/Car-Haven-Banner.png)
+
+<p align="center">
+  <a href="https://car-haven-yoosufaathils-projects.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Live_Demo-Click_Here-brightgreen?style=for-the-badge" alt="Live Demo">
+  </a>
+</p>
 
 ---
 
@@ -34,7 +40,7 @@ This project leverages **RapidAPI Cars API** to fetch real-time car data and ima
 
 ## 📂 Project Structure
 
-\`\`\`bash
+```
 my-nextjs-app/
 ├── components/
 │ ├── CarCard.tsx # Component to display a car card
@@ -63,7 +69,7 @@ my-nextjs-app/
 ├── package.json # Project dependencies and scripts
 ├── tsconfig.json # TypeScript configuration
 └── next.config.js # Next.js configuration file
-\`\`\`
+```
 
 ### Key Files
 
@@ -83,28 +89,22 @@ Make sure you have **Node.js** and **npm** installed. If not, you can download t
 
 1. Clone the repository:
 
-\`\`\`bash
-git clone https://github.com/yourusername/my-nextjs-app.git
-cd my-nextjs-app
-\`\`\`
+```
+git clone https://github.com/YoosufAathil/Car-Haven.git
+cd Car-Haven
+```
 
 2. Install the dependencies:
 
-\`\`\`bash
+```
 npm install
-\`\`\`
+```
 
-3. Create a `.env.local` file and add your **RapidAPI** credentials:
+3. Run the development server:
 
-\`\`\`bash
-NEXT_PUBLIC_RAPIDAPI_KEY=your-rapidapi-key
-\`\`\`
-
-4. Run the development server:
-
-\`\`\`bash
+```
 npm run dev
-\`\`\`
+```
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
@@ -122,11 +122,12 @@ npm run dev
 
 ### Home Page
 
-![Home Page](./public/images/homepage.png)
+![Home Page1](./public/images/Car-Haven-1.png)
+![Home Page2](./public/images/Car-Haven-2.png)
 
 ### Car Details
 
-![Car Details](./public/images/cardetails.png)
+![Car Details](./public/images/Car-Haven-3.png)
 
 ---
 
@@ -146,11 +147,11 @@ This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE)
 
 For any questions or inquiries, feel free to contact me:
 
-- **GitHub**: [Your GitHub Profile](https://github.com/YoosufAathil)
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/yoosuf-aathil)
+- [GitHub](https://github.com/YoosufAathil)
+- [LinkedIn](https://www.linkedin.com/in/yoosuf-aathil)
 
 ---
 
 ## 🎥 Tutorial Credit
 
-This project was inspired by a tutorial. You can find the original video [here](#).
+This project was inspired by a tutorial. You can find the original video [here](https://www.youtube.com/watch?v=pUNSHPyVryU).
